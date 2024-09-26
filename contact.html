@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Riley Domine</title>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <style>
+        nav {
+            background-color: transparent;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #0a3265;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0d47a1;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 70px;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        .content {
+            background-color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 50px auto;
+            max-width: 1000px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+            flex-grow: 1;
+        }
+
+        .portrait {
+            flex: 0 0 250px;
+        }
+
+        .portrait img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info {
+            flex: 1;
+            margin-left: 50px;
+        }
+
+        .contact-info h3 {
+            font-size: 2.4em;
+            color: #0a3265;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            font-size: 1.3em;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #0a3265;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+        }
+
+        .social-icons img {
+            width: 45px;
+            height: 45px;
+            margin: 0 15px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0a3265;
+            color: white;
+            padding: 25px 0;
+            width: 100%;
+            position: relative;
+            font-size: 1.1em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+
+            .portrait {
+                margin-bottom: 30px;
+            }
+
+            .contact-info {
+                margin-left: 0;
+            }
+
+            .social-icons img {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Info Section -->
+    <div class="content">
+        <!-- Portrait Image -->
+        <div class="portrait">
+            <img src="images/skyline portrait.jpg" alt="Riley Domine Portrait">
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: <a href="mailto:rileyldomine@gmail.com">rileyldomine@gmail.com</a></p>
+            <p>Phone: <a href="tel:+19168820572">+1 (916) 882-0572</a></p>
+
+            <!-- Social icons for LinkedIn and Instagram -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/riley-domine-6207a2305/" target="_blank">
+                    <img src="images/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/rileydomine/" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Riley Domine</p>
+    </footer>
+
+</body>
+</html>

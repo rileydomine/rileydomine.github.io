@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Riley Domine</title>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <style>
+        nav {
+            background-color: transparent; /* Transparent background */
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: rgb(167, 167, 167); /* White text to match the transparent background */
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0d47a1; /* Slightly darker blue on hover */
+        }
+
+        body {
+            padding-top: 70px; /* To ensure content doesn't go under the nav */
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top image and centered title */
+        .header-image {
+            width: 100%;
+            height: 600px; /* Adjusted height for better visibility */
+            background: url('images/barce.JPG') no-repeat center center/cover;
+            background-position: 50% 65%; /* This centers the image */
+            background-size: cover; /* Ensures the image covers the entire header area */
+            position: relative;
+        }
+
+        .header-image h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        /* Main content layout */
+        .content {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: -80px auto 50px auto; /* Overlap with the header image */
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            flex-grow: 1; /* Allows content to take available space */
+            z-index: 1;
+            position: relative;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            background-color: #0a3265;
+            color: white;
+            padding: 15px;
+            font-size: 1.5em;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .project-description {
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 10px;
+            color: #555;
+        }
+
+        /* Footer should be at the bottom */
+        footer {
+            text-align: center;
+            background-color: #0a3265;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        /* Make sure the body takes up the full height and flexbox is used to manage the layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .content {
+            flex-grow: 1; /* Content grows to fill the space between header and footer */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Top image with title -->
+    <div class="header-image">
+        <h2>Projects</h2>
+    </div>
+
+    <!-- Rounded white content body -->
+    <div class="content">
+        <!-- Project 1 -->
+        <div class="project">
+            <div class="project-title">Project 1: Real Estate License</div>
+            <div class="project-description">
+                I have completed all 135 hours of the California real estate salesperson coursework and am in the process of studying for the final exam to gain my official real estate license. This license will help me significantly as I branch out into different real estate fields and I have gained extensive knowledge on various subjects within the industry including: investing, subdividing, legalities, taxes, loans, etc.
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <div class="project-title">Project 2: Excel Stock Data Analysis Screener:            </div>
+            <div class="project-description">
+                I have developed an accurate and customizable stock data screener on spreadsheets. This screener displays real time price movements of specific stocks and entire industries. I have implemented various programs and finance functions to get up to date pricing, trading volume, and historical data in order to automate the process of finding profitable companies to invest in. On top of this, I created a curated investment dashboard showcasing stocks that I have already invested in; showing the amount of shares I own, total price, profitability, and market sectors, everything being displayed in real time.
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Riley Domine</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Riley Domine</title>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <style>
+        nav {
+            background-color: transparent; /* Transparent background */
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+    
+        nav a {
+            color: white; /* White text to match the transparent background */
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+    
+        nav a:hover {
+            color: #0d47a1; /* Slightly darker blue on hover */
+        }
+    
+        body {
+            padding-top: 70px; /* To ensure content doesn't go under the nav */
+            background-color: #f0f0f0;
+        }
+    </style>
+    
+
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Top image and centered title */
+        .header-image {
+            width: 100%;
+            height: 650px;
+            background: url('images/diamond\ head\ 2.JPEG') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .header-image h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 8em;
+            font-weight: bold; 
+        }
+
+        /* Rounded content section */
+        .content {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: -100px auto 50px auto; /* Negative margin to overlap the image */
+            max-width: 900px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .bio {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.8;
+            margin-top: 30px; /* Additional space below the header image */
+        }
+
+        .three-words {
+            margin: 50px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .word-box {
+            text-align: center;
+            width: 30%;
+        }
+
+        .word-box h3 {
+            font-size: 2em;
+            color: #0a3265;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .word-box p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0a3265;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top image with title -->
+    <div class="header-image">
+        <h2>About Me</h2>
+    </div>
+
+    <!-- Rounded white content body -->
+    <div class="content">
+        <p class="bio">Hello, I am Riley Domine, an aspiring real estate developer with a passion for design, community service, and mental health advocacy. As a newly graduated student at West Campus College Preparatory High School with a 4.14 GPA, and an Incoming freshman into the UC Irvine School of Social Ecology, I've gained extensive experience through various roles and projects. Feel free to contact me!</p>
+
+        <!-- Three words that describe me -->
+        <div class="three-words">
+            <div class="word-box">
+                <h3>Grit</h3>
+                <p>Grit means to have passion and perseverance for long term goals. I have grit because I will always stick with what I feel is true to my future. I will maintain effort on what I wish to achieve and retain responsibility on all of my actions and steps towards my future. I see grit as my drive to be the person I wish to become.
+                </p>
+            </div>
+            <div class="word-box">
+                <h3>Limitless</h3>
+                <p>A limitless person is one who will do whatever it takes to overcome and achieve. I am limitless because no matter what curveball life throws at me, I am always looking for solutions and troubleshooting for unique ways to conquer. Each roadblock that I encounter becomes a new opportunity for growth.</p>
+            </div>
+            <div class="word-box">
+                <h3>Structured</h3>
+                <p>To be structured means to be reliable and organized with a solid base of trust in order to complete future endeavors. I am a structured person because I create unique routines based on what I wish to achieve. Each day is a different opportunity to organize myself and my tasks to be the best and most outstanding version of me.</p>
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div class="image-container">
+            <img src="images/wollman rink.JPG" alt="Image 1">
+            <img src="images/billion row.JPG" alt="Image 2">
+            <img src="images/times square.JPG" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Riley Domine</p>
+    </footer>
+
+</body>
+</html>
